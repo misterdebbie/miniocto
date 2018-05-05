@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Karla');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Karla', sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, html {
+ box-sizing: border-box;
+}
+
+*, *:before, *:after {
+ box-sizing: inherit;
+}
+
+* {
+  font-family: 'Karla', sans-serif;
+  color: #665544;
+  text-align: center;}
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Karla', sans-serif;
+}
+#top {
+    background-color: black;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    margin: -54px 0;
+}
+#top ul {
+  margin: 0 0 0 120px;
+  padding: 8px;
+  text-align: left;
+}
+#top ul li {
+  padding: 5px;
+  line-height: 70%;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+#top a {
+  color: white;
+  text-decoration: none;
+}
+#top a:hover {
+  color: #726acc;
+  text-decoration: underline;
+}
+#home {
+  margin-left: 9px;
+}
+#login {
+  width: 20%;
+  float: right;
+  padding: 5px;
+  line-height: 70%;
+}
+#header {
+  margin-top: 50px;
+}
+#header h1 {
+  font-size: 3rem;
+}
+#timetarget {
+  margin: 0 auto;
+}
+hr {
+  width: 80%;
+  padding: 0;
+}
+#nav a {
+  text-decoration: none;
+  color: black;
+}
+#nav a:hover {
+  color: #726acc;
+  text-decoration: underline;
+}
+#nav li {
+  margin-left: 20px;
+}
+
+#content {
+  overflow: auto;}
+#nav, #feature, #footer {
+  margin: 1%;}
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;}
+.column3 {
+  margin-right: 0%;}
+li {
+  display: inline;
+  padding: 0.5em;
+}
+#nav {
+  /*background-color: #efefef;
+  padding: 0.5em 0;*/
+}
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;}
+#footer {
+  margin-top: 20px;
+  background-color: #efefef;
+  padding: 10px;
+}
+p {
+  width: 60%;
+  margin: auto;
+}
+@media only screen and (max-width: 460px){
+  body {
+    background: yellow;
+  }
+  #top {
+      background-color: black;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 10;
+      margin: -194px 0;
+  }
+  #top ul {
+    width: 100%;
+    margin: auto;
+  }
+  #top ul li {
+    padding: 10px;
+    line-height: 70%;
+    margin-left: 0px;
+    text-transform: uppercase;
+    display: block;
+  }
+  #login {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  #header {
+    margin-top: 190px;
+  }
+  #nav li {
+    display: block;
+    margin-left: 0px;
+    font-size: 1.3rem;
+  }
+  #feature {
+    width: 90%;
+    height: 20em;
+    margin: 1em auto;
+    background-color: #efefef;
+  }
+  .article {
+    margin: auto;
+  }
+  .column1, .column2, .column3 {
+    width: 80%;
+    margin: 5px auto;
+    float: none;
+  }
+}
