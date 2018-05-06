@@ -6,9 +6,21 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--  <div>
   <h1>Here's what we got back</h1>
   <h2>Title: <%= data.results[0].title %> </h2>
   <p>Abstract: <%= data.results[0].abstract %> </p>
   <h2>By: <%= data.results[0].byline %> </h2>
+  <p>Published: <%= data.results[0].published_date %> </p>
+</div>-->
+
+  <div id="all">
+    <div class='testtwo'>
+      <% for(let i = 0; i < data.results.length;i++) { %>
+      <h5> <span class="tiny">Title:</span> <a href="<%= data.results[i].url %>"> <%= data.results[i].title %> </a></h5>
+      <h5 id='target'> <span class="tiny">Abstract:</span> <%= data.results[i].abstract %> </h5>
+      <% } %>
+    </div>
+  </div>
 </body>
 </html>

@@ -6,7 +6,7 @@ const path = require('path');
 
 const PORT = process.env.PORT || 3000;
 
-require('dotenv').config();
+require('dotenv').config()
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
