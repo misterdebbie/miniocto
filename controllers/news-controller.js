@@ -1,4 +1,5 @@
 const axios = require('axios');
+const Article = require('../models/article');
 const controller = {};
 
 controller.home = (req,res) => {
@@ -22,4 +23,16 @@ controller.results = (req,res) => {
     res.status(500).json(err)
   })
 };
+
+controller.index = (req,res) => {
+  Article.findAll()
+  .then(articles => {
+    res.render('found', {
+      articles: articles
+    })
+  }).catch(err => {
+    res.status(400).json(err);
+  });
+};
+
 module.exports = controller;

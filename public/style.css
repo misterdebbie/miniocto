@@ -166,6 +166,18 @@ form {
   text-align: left;
   margin: 8px auto;
 }
+h1 {
+  margin: 30px auto;
+}
+.art {
+  margin: 20px auto;
+}
+.art a {
+  color: blue;
+}
+.art a:hover{
+  color: green;
+}
 @media only screen and (max-width: 460px){
   body {
     background: yellow;
