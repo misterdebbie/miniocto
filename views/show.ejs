@@ -31,24 +31,19 @@
       </div>
       <hr>
     </div>
-    <h1>Your Articles</h1>
 
-<% articles.forEach(article => { %>
-  <div class="art">
-    <h4>
-      <a href="<%= `/${article.id}` %>">
-        <%= article.title %>
-      </a>
-    </h4>
-    <p><%= article.abstract %></p>
-    <p><%= article.byline %></p>
+    <div class="art">
+      <h4>
+          <%= article.title %>
+      </h4>
+      <p><%= article.abstract %></p>
+      <p><%= article.byline %></p>
+    <a href="/view">Back</a>
+    </div>
 
-  </div>
-<% }) %>
-
-  <!--  <div id="footer">
+    <div id="footer">
       <p>&copy;yang</p>
-    </div>-->
+    </div>
     <script src="date.js" type="text/javascript"></script>
   </body>
 </html>

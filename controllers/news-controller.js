@@ -35,4 +35,15 @@ controller.index = (req,res) => {
   });
 };
 
+controller.articleById = (req,res) => {
+  Article.findById(req.params.id)
+    .then(article => {
+      res.render('show', {
+        article: article
+      })
+    }).catch(err => {
+      res.status(400).json(err);
+    });
+};
+
 module.exports = controller;
