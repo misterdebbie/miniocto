@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS articles (
   abstract VARCHAR(255),
   url VARCHAR(255),
   published VARCHAR(255),
-  byline VARCHAR(255)
+  byline VARCHAR(255),
+  thoughts VARCHAR(255)
 );

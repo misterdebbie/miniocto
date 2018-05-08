@@ -38,7 +38,11 @@
       </h4>
       <p><%= article.abstract %></p>
       <p><%= article.byline %></p>
+      <p><%= article.thoughts %></p>
+
     <a href="/view">Back</a>
+    <a href="<%= `/${article.id}/edit`%>">Edit details</a>
+
     </div>
 
     <div id="footer">

@@ -19,6 +19,7 @@
       <% for(let i = 0; i < data.results.length;i++) { %>
       <h5> <span class="tiny">Title:</span> <a href="<%= data.results[i].url %>"> <%= data.results[i].title %> </a></h5>
       <h5 id='target'> <span class="tiny">Abstract:</span> <%= data.results[i].abstract %> </h5>
+      <button>add article to reading list</button>
       <% } %>
     </div>
   </div>

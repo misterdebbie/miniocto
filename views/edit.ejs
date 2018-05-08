@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>New York Times API</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
     <div id="top">
@@ -31,25 +31,22 @@
       </div>
       <hr>
     </div>
-    <h1>Your Articles</h1>
+    <h3>Edit saved entry</h3>
+    <form action="<%= `/${article.id}?_method=PUT` %>" method="POST">
+  <label for="title">Title</label>
+  <input id="title" type="text" name="title" value="<%= article.title %>" />
 
-<% articles.forEach(article => { %>
-  <div class="art">
-    <h4>
-      <a href="<%= `/${article.id}` %>">
-        <%= article.title %>
-      </a>
-    </h4>
-    <p><%= article.abstract %></p>
-    <p><%= article.byline %></p>
-    <p><%= article.thoughts %></p>
+  <br />
 
-  </div>
-<% }) %>
+  <label for="thoughts">My thoughts</label>
+  <input id="thoughts" type="text" name="thoughts" value="<%= article.thoughts %>" />
 
-  <!--  <div id="footer">
-      <p>&copy;yang</p>
-    </div>-->
+  <br />
+
+  <input type="submit" value="Save changes" />
+</form>
+
+<a href="<%= `/${article.id}` %>">Cancel</a>
     <script src="date.js" type="text/javascript"></script>
   </body>
 </html>

@@ -3,6 +3,8 @@ const app = express();
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const path = require('path');
+const methodOverride = require('method-override');
+app.use(methodOverride('_method'));
 
 const PORT = process.env.PORT || 3000;
 

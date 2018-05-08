@@ -46,4 +46,28 @@ controller.articleById = (req,res) => {
     });
 };
 
+controller.edit = (req,res) => {
+  Article.findById(req.params.id)
+    .then(article => {
+      res.render('edit', {
+        article:article
+      })
+    }).catch(err => {
+      res.status(400).json(err);
+    });
+};
+
+controller.update = (req,res) => {
+  Article.update({
+    title: req.body.title,
+    thoughts: req.body.thoughts
+  }, req.params.id)
+  .then(() => {
+    res.redirect(`/${req.params.id}`)
+  })
+  .catch(err => {
+    res.status(400).json(err);
+  });
+};
+
 module.exports = controller;

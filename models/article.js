@@ -10,5 +10,17 @@ Article.findById = id => {
   [id]);
 };
 
+Article.update = (article, id) => {
+  return db.none(
+    `
+      UPDATE articles SET
+      title = $1,
+      thoughts = $2
+      WHERE id = $3
+    `,
+    [article.title, article.thoughts, id]
+  );
+};
+
 
 module.exports = Article;
