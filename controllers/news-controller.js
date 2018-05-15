@@ -5,6 +5,9 @@ const controller = {};
 controller.home = (req,res) => {
   res.render('home');
 };
+controller.account = (req,res) => {
+  res.render('login');
+};
 
 controller.results = (req,res) => {
   console.log('results method!');

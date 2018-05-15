@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans');
+
+body {
+  width: 100%;
+
+  background-color: #aeefcc;
+  background-color: #acc6ef;
+  background-color: #f9f8f6;
+
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+header {
+  width: 100%;
+  height: 100px;
+  background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521507005/burger_knikjg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.first {
+  margin: 0 auto;
+}
+
+ul.areas {
+  width: 25%;
+  margin: auto;
+}
+
+ul.areas li {
+  display: inline;
+  padding-left: 14px;
+}
+
+ul.areas li a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+ul.areas li a:hover {
+  color: yellow;
+}
+
+#page {
+  background-color: #edd3e8;
+  margin: 0 auto 0 auto;
+  border: 2px solid black;
+}
+
+/*h1 {
+  font-family: 'Great Vibes', cursive;
+  height: 40px;
+  line-height: 75px;
+  width: 220px;
+  margin: 0 auto;
+  padding: 20px 10px 10px 10px;
+}*/
+
+#logo {
+  /*background: #ea45ef;*/
+  background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521637505/cake_egnmpf.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 125px;
+  width: 50%;
+  width: 220px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+}
+
+h2 {
+  /*background-color: #797ee0;*/
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  font-size: 26px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 0 0 20px 0;}
+
+form {
+    /*background-color: #bdefc9;*/
+    padding: 0 60px 85px 60px;
+  }
+
+label {
+    /*background-color: #4eccce;*/
+    color: #fff;
+    color: black;
+    display: block;
+    margin: 10px 0 10px 0;
+    font-size: 20px;}
+
+input[type='text'], input[type='password']{
+      background-color: #f4f4c1;
+      color: #667;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      width: 96%;
+      padding: 5px 6px;
+      border: 1px solid #999;
+      border-radius: 8px;}
+
+input[type='text']:focus, input[type='password']:focus {
+      border: 1px solid #999;
+      background-color: #fff;
+      outline:none;}
+
+input[type='submit'], a.add {
+      background-color: #9a79ce;
+      color: #f3dad1;
+      border-radius: 5px;
+      padding: 9px 10px;
+      margin-top: 10px;
+      float: right;
+      font-size: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      cursor: pointer;
+     }
+
+input[type='submit']:hover, a.add:hover {
+      background-color: #d75359;
+      background-color: #9a79ce;
+      background-color: #ebf486;
+      color: #f3dad1;
+      color: lightseagreen;
+      border: 1px solid #999;
+      box-shadow: none;
+      position: relative;
+      top: 1px;}
+
+#note { color: #fff;
+        color: #ce74f2;
+        background-color: #000;
+        background-color: pink;
+        opacity: 0.9;
+        box-shadow: -3px 3px 6px #000;
+        box-shadow: -1px 3px 6px powderblue;
+        padding: 1em 1em 2em 1em;
+        height: 50%;
+        width: 30%;
+        position: absolute;
+        top: 6em;
+        left: 460px;
+        /*border: 1px solid lightseagreen;*/
+      }
+
+#note .header + div {
+        background: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 1);
+        background: powderblue;
+        /*background: pink;*/
+        position: relative;
+        text-align: center;
+        top: 5px;
+        color: #d7666b;
+        color:green;
+        color: #ce74f2;
+        padding: 20px;
+        margin: 30px;
+        border: 3px solid lightseagreen;}
+
+#note h2 {
+        background: orange;
+        background: #edb274;
+        color: #d7666b;
+        color: yellow;
+        padding-top: 20px;
+        padding-bottom: 20px;}
+
+#note a {
+        /*background: blue;*/
+        text-decoration: none;
+        color: #fff;
+        color:red;
+        color: #bb19fc;
+      }
+
+#note .header {
+        text-align: right;
+        /*background-color: #000;*/
+        /*background-color: lightseagreen;*/
+        border: none;
+        padding: 0 0 0 10px;}
+
+/* Small screen - acts like the app would */
+
+@media only screen and (max-width: 500px) {
+        body {
+          background-color: yellow;
+        }
+        #page {
+          max-width: 480px;
+        }
+      #logo {
+          background-repeat: no-repeat;
+          background-position: center center;
+          text-align: center;
+          background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521507005/burger_knikjg.png');
+        }
+        #note {
+          width: 360px;
+          margin: 20px auto 20px auto;
+          padding: 1em 1em 2em 1em;
+          position: absolute;
+          top: 4em;
+          left: 3px;
+      }
+      }
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+        body {
+          background-color: lightseagreen;
+        }
+        #page {
+          max-width: 480px;
+          margin: 20px auto 20px auto;
+        }
+        #logo {
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521639916/apple_kolz1k.png');
+          }
+          #note {
+            width: 400px;
+            margin: 10px auto 20px auto;
+            padding: 1em 1em 2em 1em;
+            position: absolute;
+            top: 7em;
+            left: 22%;
+        }
+      }
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+        body {
+          background-color: black;
+        }
+        #page {
+          max-width: 480px;
+          margin: 20px auto 20px auto;
+        }
+        #logo {
+            background-repeat: no-repeat;
+            background-position: center center;
+            text-align: center;
+            background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521639528/veggies_cciw5w.png');
+          }
+          #note {
+            width: 400px;
+            margin: 10px auto 20px auto;
+            padding: 1em 1em 2em 1em;
+            position: absolute;
+            top: 7em;
+            left: 23.3%;
+        }
+      }
+  /* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) {
+        #page {
+          max-width: 480px;
+          margin: 20px auto 20px auto;
+        }
+        #note {
+          max-width: 410px;
+          margin: 20px auto 20px auto;
+          position: absolute;
+
+        }
+      }
+/*  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    h1{
+    background-image: url('http://res.cloudinary.com/devbov2b0/image/upload/v1521507005/burger_knikjg.png');
+    background-size: 72px 72px;
+    }
+}*/
