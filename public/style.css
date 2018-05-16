@@ -89,7 +89,7 @@ body {
   margin: 0 auto;
 }
 hr {
-  width: 80%;
+  width: 90%;
   padding: 0;
 }
 #nav a {
@@ -105,6 +105,8 @@ hr {
 }
 
 #content {
+  width: 90%;
+  margin: auto;
   overflow: auto;}
 #nav, #feature, #footer {
   margin: 1%;}
@@ -123,7 +125,7 @@ li {
   padding: 0.5em 0;*/
 }
 #feature, .article {
-  height: 10em;
+  height: 15em;
   margin-bottom: 1em;
   background-color: #efefef;}
 #footer {
@@ -178,9 +180,37 @@ h1 {
 .art a:hover{
   color: green;
 }
+/*#feature {
+  background-image: url("http://res.cloudinary.com/devbov2b0/image/upload/v1526487101/flowertwo_brboaz.png");
+}*/
+#bloom {
+  background-image: url("http://res.cloudinary.com/devbov2b0/image/upload/v1526487116/flowerfour_vhayii.jpg");
+}
+#nature {
+  background-image: url("http://res.cloudinary.com/devbov2b0/image/upload/v1526487109/flowerthree_x672in.png");
+}
+#pure {
+  background-image: url("http://res.cloudinary.com/devbov2b0/image/upload/v1526487093/flowerone_l0mxcl.jpg");
+}
+.article h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 5px;
+}
+.article p {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 38px;
+}
+.article a {
+  color: #d9e835;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 460px){
   body {
-    background: yellow;
+    background: pink;
   }
   #top {
       background-color: black;
